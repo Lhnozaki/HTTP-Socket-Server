@@ -1,7 +1,7 @@
 "use Strict";
 
 // Creates the path to get the data from reply.js
-const replies = require("./reply");
+const replies = require("./reply.js");
 
 // Define variables
 const PORT = process.env.PORT || 8080;
@@ -20,7 +20,6 @@ const server = net.createServer(socket => {
 
     // parse the string
     let index = data.slice(data.indexOf("/"), data.indexOf("HTTP") - 1);
-    console.log(index);
 
     // Empty Response Header
     let response = "";
@@ -46,7 +45,7 @@ Date: ${new Date()}
 Content-Type: ${resType}
 Content-Length: ${resLength}
 Connection: ${resConnection}
-        
+
 ${resContent}`;
 
     console.log(response);
