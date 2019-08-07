@@ -1,0 +1,26 @@
+{
+  "name": "http-socket-server",
+  "version": "0.0.1",
+  "description": "NodeJS Socket Server",
+  "main": "client.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lhnozaki/HTTP-Socket-Server.git"
+  },
+  "keywords": [
+    "NodeJS"
+  ],
+  "author": "Lewis Nozaki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lhnozaki/HTTP-Socket-Server/issues"
+  },
+  "homepage": "https://github.com/Lhnozaki/HTTP-Socket-Server#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
